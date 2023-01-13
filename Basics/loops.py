@@ -52,11 +52,37 @@ import time
 #                finishing one iteration of the outer loop
 
 
-rows = int(input("Enter no. of rows : "))
-cols = int(input("Enter no. of columns : "))
-ch = input("Enter the character you want to display : ")
+# rows = int(input("Enter no. of rows : "))
+# cols = int(input("Enter no. of columns : "))
+# ch = input("Enter the character you want to display : ")
 
-for i in range(rows):
-    for j in range(cols):
-        print(ch, end="")
-    print()
+# for i in range(rows):
+#     for j in range(cols):
+#         print(ch, end="")
+#     print()
+
+
+
+# Loop control statement = change a loops execution from the normal sequence
+
+# Break = used to terminate the loop entirely
+# continue = skips to the next iterationn of the loop
+# pass = does nothing , acts as a placeholder
+
+# while True:
+#     name = input("Enter your name : ");
+#     if name != "":
+#         break
+
+# price = "$234"
+# for i in price:
+#     if i == "$":
+#         continue
+#     print(i, end="")
+
+
+for i in range(1, 21):
+    if i == 13:
+        pass
+    else:
+        print(i)
