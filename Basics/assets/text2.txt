@@ -1,0 +1,2 @@
+Hello, We are performing writing operations in file
+See ya!!
