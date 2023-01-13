@@ -1,45 +1,42 @@
 import random
 
-while True:
+game = True
+
+while game:
     choices = ["rock", "paper", "scissor"]
 
-    computer = random.choice(choices);
-    user = input("Enter your choice(rock, paper or scissor) : ").lower()
+    computer = random.choice(choices)
+    user = input("Enter your choice(rock, paper, scissor and \n 'exit' for Exit the game) : ").lower()
 
     if(computer == user):
         print("User : " + user)
         print("Computer : " + computer)
         print("-----Tie-------")
+    elif(user == 'exit'):
         break
     elif(computer == "rock" and user == "scissor"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------Computer Wins -----")
-        break
     elif(user == "rock" and computer == "scissor"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------User Wins -----")
-        break
     elif(user == "rock" and computer == "paper"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------Computer Wins -----")
-        break
     elif(computer == "rock" and user == "scissor"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------User Wins -----")
-        break
     elif(user == "paper" and computer == "scissor"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------Computer Wins -----")
-        break
     elif(computer == "paper" and user == "scissor"):
         print("User : " + user)
         print("Computer : " + computer)
         print("------User Wins -----")
-        break
     else:
-        print("Enter proper choice ")    
+        print("\nEnter proper choice \n") 
